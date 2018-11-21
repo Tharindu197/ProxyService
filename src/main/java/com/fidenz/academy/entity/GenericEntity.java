@@ -1,4 +1,5 @@
 package com.fidenz.academy.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.bson.types.ObjectId;
 
 import javax.persistence.*;
@@ -12,10 +13,12 @@ public abstract class GenericEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private ObjectId _id;
 
     @Column
     @Temporal(TemporalType.TIMESTAMP)
+    @JsonIgnore
     private Date timestamp;
 
     public Date getTimestamp() {
