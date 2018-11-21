@@ -3,7 +3,7 @@ A RESTFull Web Service which acts like a proxy server. Caches API Responses for 
 
 ## Features:
 * 3rd party external APIs can be configured with extending 'GenericEntity' abstract class and implementing own response entity (Deserializable to the output JSON value of API).
-* Generalized Utility classes for external API calling (ApiCallProcessor) and validating expiration state (Entity Validator) of cached API response.[can be found in the utility package]
+* Generalized Utility classes for external API calling (ApiCallProcessor) and validating expiration state (EntityValidator) of cached API response. [can be found in the utility package]
 
 ## Technologies used:
 ```
