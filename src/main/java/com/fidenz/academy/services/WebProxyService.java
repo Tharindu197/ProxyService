@@ -23,18 +23,18 @@ public class WebProxyService implements IWebProxyService {
         Element element = null;
 
         if(elements == null || elements.size() == 0 || lookupCity(elements, cityID) == null ){ //no records in the db, call external api
-            element = fetchToDB(cityID);
+            element = fetchFromApiToDb(cityID);
         } else {
             element = lookupCity(elements, cityID);
             if(EntityValidator.isExpired(element)){ //expired. delete entity and call api
                 repository.delete(element);
-                element = fetchToDB(cityID);
+                element = fetchFromApiToDb(cityID);
             }
         }
         return element;
     }
 
-    private Element fetchToDB(int cityID){
+    private Element fetchFromApiToDb(int cityID){
         Response response = ApiCallProcessor.processApiCall(ExternalApis.OPENWEATHER_API + "&id=" + cityID, Response.class);
         Element element = null;
         if(response != null) {
