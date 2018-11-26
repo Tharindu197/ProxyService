@@ -4,6 +4,8 @@ public class URLFormatter {
 
     private String URL;
 
+    public URLFormatter(){}
+
     public URLFormatter(String URL){
         this.URL = URL;
     }
