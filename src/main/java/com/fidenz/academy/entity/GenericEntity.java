@@ -1,4 +1,5 @@
 package com.fidenz.academy.entity;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.bson.types.ObjectId;
 
@@ -7,8 +8,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Inheritance (strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name= "META_INFO")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "META_INFO")
 public abstract class GenericEntity implements Serializable {
 
     @Id

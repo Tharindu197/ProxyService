@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Repository
-public interface IGenericRepository <T extends GenericEntity, String extends Serializable> extends JpaRepository<T, String> {
+public interface IGenericRepository<T extends GenericEntity, String extends Serializable> extends JpaRepository<T, String> {
     @Query("SELECT g FROM GenericEntity g")
     public List<T> retrieveResponses();
 }
