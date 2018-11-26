@@ -128,11 +128,11 @@ Sets the server URL. The setURL() setter can also be used for this purpose.
 
 <b>2. void addRequestParam(String key, String value)</b>
 <br>
-Add request parameters to the URL. (Get mappings)
+Adds request parameters to the URL. (Get mappings)
 ###### params:
 <ul>
   <li><b>key:</b>Parameter name</li>
-   <li><b>key:</b>Parameter value</li>
+   <li><b>value:</b>Parameter value</li>
 </ul>
 
 e.g:
