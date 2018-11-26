@@ -17,11 +17,11 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
     @Autowired
     protected IGenericRepository repository;
 
-    protected boolean isDbEmpty(List<T> elements) {
+    private boolean isDbEmpty(List<T> elements) {
         return elements == null || elements.size() == 0;
     }
 
-    protected T lookUp(List<T> entities, Class<? extends T> lookUpClass, String fieldName, Object search) {
+    private T lookUp(List<T> entities, Class<? extends T> lookUpClass, String fieldName, Object search) {
         for (T entity : entities) {
             try {
                 if (entity != null && entity.getClass() == lookUpClass) {
@@ -38,7 +38,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
         return null;
     }
 
-    protected T fetchSingleFromApiToDb(String URL, Class<A> responseClass, Class<? extends T> entityClass, String entityFieldName) {
+    private T fetchSingleFromApiToDb(String URL, Class<A> responseClass, Class<? extends T> entityClass, String entityFieldName) {
         A response = ApiCallProcessor.processApiCall(URL, responseClass);
         if (responseClass.equals(entityClass)) {
             //returns response: if, required entity is the response itself
@@ -78,7 +78,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
         }
     }
 
-    protected List<T> fetchAllFromApiToDb(String URL, Class<A> responseClass, Class<?> entityClass, String entityFieldName) {
+    private List<T> fetchAllFromApiToDb(String URL, Class<A> responseClass, Class<?> entityClass, String entityFieldName) {
         A response = ApiCallProcessor.processApiCall(URL, responseClass);
         if (responseClass.equals(entityClass)) {
             //returns response: if, required entity is the response itself
@@ -120,7 +120,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
         }
     }
 
-    public List<T> getData(String URL, Class<A> responseClass, Class<? extends T> entityClass, String wrapperFieldName) {
+    protected List<T> getData(String URL, Class<A> responseClass, Class<? extends T> entityClass, String wrapperFieldName) {
         List<T> entities = repository.retrieveResponses();
 
         if (isDbEmpty(entities)) { //no records in the db, call external api
@@ -136,7 +136,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
         return entities;
     }
 
-    public T getData(String URL, Class<A> responseClass, Class<? extends T> entityClass, Object id, String idFieldName, String wrapperFieldName) {
+    protected T getData(String URL, Class<A> responseClass, Class<? extends T> entityClass, Object id, String idFieldName, String wrapperFieldName) {
         List<T> entities = repository.retrieveResponses();
         T entity = (T) lookUp(entities, entityClass, idFieldName, id);
 
