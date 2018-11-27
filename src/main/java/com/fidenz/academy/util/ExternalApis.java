@@ -1,5 +1,7 @@
 package com.fidenz.academy.util;
 
+import com.fidenz.academy.url.formatter.URLFormatFactory;
+import com.fidenz.academy.url.formatter.URLFormatter;
 import org.springframework.util.DigestUtils;
 
 public class ExternalApis {

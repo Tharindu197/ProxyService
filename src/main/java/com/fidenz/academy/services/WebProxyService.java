@@ -3,8 +3,8 @@ package com.fidenz.academy.services;
 import com.fidenz.academy.entity.response.marvel.Story;
 import com.fidenz.academy.entity.response.weather.Element;
 import com.fidenz.academy.util.ExternalApis;
-import com.fidenz.academy.util.URLFormatFactory;
-import com.fidenz.academy.util.URLFormatter;
+import com.fidenz.academy.url.formatter.URLFormatFactory;
+import com.fidenz.academy.url.formatter.URLFormatter;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
