@@ -3,6 +3,7 @@ package com.fidenz.academy.services;
 import com.fidenz.academy.entity.response.marvel.Story;
 import com.fidenz.academy.entity.response.weather.Element;
 import com.fidenz.academy.util.ExternalApis;
+import com.fidenz.academy.util.URLFormatFactory;
 import com.fidenz.academy.util.URLFormatter;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ public class WebProxyService extends WebProxyServiceHelper implements IWebProxyS
     @SuppressWarnings("unchecked")
     @Override
     public Element getWeather(int cityID) {
-        URLFormatter urlFormatter = new URLFormatter(ExternalApis.OPENWEATHER_API());
+        URLFormatter urlFormatter = URLFormatFactory.buildFormatter(ExternalApis.OPENWEATHER_API());
         urlFormatter.addRequestParam("id", cityID);
         String URL = urlFormatter.getURL();
         //following returned object can be post-processed/ manipulated before sending back to client, if necessary

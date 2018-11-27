@@ -7,7 +7,7 @@ public class ExternalApis {
         String server = "http://api.openweathermap.org/data/2.5/group";
         String units = "metric";
         String appId = "9a65d50b7e563dbdb590192df2036d11";
-        URLFormatter urlFormatter = new URLFormatter(server);
+        URLFormatter urlFormatter = URLFormatFactory.buildFormatter(server);
         urlFormatter.addRequestParam("units", units);
         urlFormatter.addRequestParam("appid", appId);
         return urlFormatter.getURL();
@@ -20,7 +20,7 @@ public class ExternalApis {
         String combination = timestamp + privateKey + publicKey;
         String hash = DigestUtils.md5DigestAsHex(combination.getBytes());
         String server = "http://gateway.marvel.com/v1/public/stories";
-        URLFormatter urlFormatter = new URLFormatter(server);
+        URLFormatter urlFormatter = URLFormatFactory.buildFormatter(server);
         urlFormatter.addRequestParam("apikey", publicKey);
         urlFormatter.addRequestParam("ts",timestamp);
         urlFormatter.addRequestParam("hash", hash);
