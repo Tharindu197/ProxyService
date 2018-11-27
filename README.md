@@ -115,6 +115,18 @@ e.g:
 
 ### 5. URLFormatter [Utility Class]
 This Utility class can be used to format a URL with a given servername and request parameters / paths.
+<br><ul>
+  <li>Obtain Instance via <b>URLFormatFactory</b>:</li></ul>
+
+```java
+String serverUrl = "...";
+URLFormatter urlFormatter = URLFormatFactory.buildFormatter(serverUrl);
+
+//or
+String serverUrl = "...";
+URLFormatter urlFormatter = URLFormatFactory.getFormatter();
+urlFormatter.setURL(serverUrl);
+```
 
 #### Method Usage of URLFormatter:
 
