@@ -48,4 +48,5 @@ dependencies {
     compile 'org.mongodb:mongodb-driver-sync:3.9.0'
     compile group: 'org.hibernate.ogm', name: 'hibernate-ogm-mongodb', version: '5.4.0.Final'
     compile group: 'org.hibernate.ogm', name: 'hibernate-ogm-core', version: '5.4.0.Final'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
 }

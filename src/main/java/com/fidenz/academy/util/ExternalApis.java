@@ -3,7 +3,7 @@ package com.fidenz.academy.util;
 import org.springframework.util.DigestUtils;
 
 public class ExternalApis {
-    public static final String OPENWEATHER_API(){
+    public static final String OPENWEATHER_API() {
         String server = "http://api.openweathermap.org/data/2.5/group";
         String units = "metric";
         String appId = "9a65d50b7e563dbdb590192df2036d11";
@@ -22,7 +22,7 @@ public class ExternalApis {
         String server = "http://gateway.marvel.com/v1/public/stories";
         URLFormatter urlFormatter = URLFormatFactory.buildFormatter(server);
         urlFormatter.addRequestParam("apikey", publicKey);
-        urlFormatter.addRequestParam("ts",timestamp);
+        urlFormatter.addRequestParam("ts", timestamp);
         urlFormatter.addRequestParam("hash", hash);
         return urlFormatter.getURL();
     }

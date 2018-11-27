@@ -4,6 +4,7 @@ import com.fidenz.academy.entity.GenericEntity;
 import com.fidenz.academy.repo.IGenericRepository;
 import com.fidenz.academy.util.ApiCallProcessor;
 import com.fidenz.academy.util.EntityValidator;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.beans.IntrospectionException;
@@ -13,6 +14,8 @@ import java.util.Date;
 import java.util.List;
 
 abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
+
+    static Logger log = Logger.getLogger(WebProxyServiceHelper.class.getName());
 
     @Autowired
     protected IGenericRepository repository;
@@ -39,6 +42,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
     }
 
     private T fetchSingleFromApiToDb(String URL, Class<A> responseClass, Class<? extends T> entityClass, String entityFieldName) {
+        log.info("Fetching data from " + URL + " to " + entityClass.getName());
         A response = ApiCallProcessor.processApiCall(URL, responseClass);
         if (responseClass.equals(entityClass)) {
             //returns response: if, required entity is the response itself
@@ -70,6 +74,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
                     }
                     //save to Db
                     repository.save(entity);
+                    log.info("Saved fetched data " + entityClass.getName() + " in the cache.");
                 } catch (IllegalAccessException | InvocationTargetException | IntrospectionException e) {
                     e.printStackTrace();
                 }
@@ -79,6 +84,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
     }
 
     private List<T> fetchAllFromApiToDb(String URL, Class<A> responseClass, Class<?> entityClass, String entityFieldName) {
+        log.info("Fetching data from " + URL + " to " + entityClass.getName());
         A response = ApiCallProcessor.processApiCall(URL, responseClass);
         if (responseClass.equals(entityClass)) {
             //returns response: if, required entity is the response itself
@@ -112,6 +118,7 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
                     for (T entity : entities) {
                         repository.save(entity);
                     }
+                    log.info("Saved fetched data " + entityClass.getName() + " in the cache.");
                 } catch (IllegalAccessException | InvocationTargetException | IntrospectionException | InvalidListException e) {
                     e.printStackTrace();
                 }
@@ -120,22 +127,26 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
         }
     }
 
+    @SuppressWarnings("unchecked")
     protected List<T> getData(String URL, Class<A> responseClass, Class<? extends T> entityClass, String wrapperFieldName) {
         List<T> entities = repository.retrieveResponses();
 
         if (isDbEmpty(entities)) { //no records in the db, call external api
             entities = (List<T>) fetchAllFromApiToDb(URL, responseClass, entityClass, wrapperFieldName);
         } else {
+            log.info("Cached data found for: " + entityClass.getName());
             if (EntityValidator.isExpired(entities.get(0))) { //expired. delete entity and call api
                 for (T entity : entities) {
                     repository.delete(entity);
                 }
+                log.info("Chached data has expired. Expired data removed from the cache.");
                 entities = (List<T>) fetchAllFromApiToDb(URL, responseClass, entityClass, wrapperFieldName);
             }
         }
         return entities;
     }
 
+    @SuppressWarnings("unchecked")
     protected T getData(String URL, Class<A> responseClass, Class<? extends T> entityClass, Object id, String idFieldName, String wrapperFieldName) {
         List<T> entities = repository.retrieveResponses();
         T entity = (T) lookUp(entities, entityClass, idFieldName, id);
@@ -143,8 +154,10 @@ abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
         if (isDbEmpty(entities) || entity == null) { //no records in the db, call external api
             entity = (T) fetchSingleFromApiToDb(URL, responseClass, entityClass, wrapperFieldName);
         } else {
+            log.info("Cached data found for: " + entityClass.getName());
             if (EntityValidator.isExpired(entity)) { //expired. delete entity and call api
                 repository.delete(entity);
+                log.info("Chached data has expired. Expired data removed from the cache.");
                 entity = (T) fetchSingleFromApiToDb(URL, responseClass, entityClass, wrapperFieldName);
             }
         }

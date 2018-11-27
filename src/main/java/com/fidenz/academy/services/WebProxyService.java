@@ -19,7 +19,7 @@ public class WebProxyService extends WebProxyServiceHelper implements IWebProxyS
         urlFormatter.addRequestParam("id", cityID);
         String URL = urlFormatter.getURL();
         //following returned object can be post-processed/ manipulated before sending back to client, if necessary
-        Element element =  (Element) getData(URL, com.fidenz.academy.entity.response.weather.Response.class, Element.class, cityID, "id", "list");
+        Element element = (Element) getData(URL, com.fidenz.academy.entity.response.weather.Response.class, Element.class, cityID, "id", "list");
         return element;
     }
 
