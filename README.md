@@ -3,6 +3,7 @@ A RESTFull Web Service which acts like a proxy server. Caches API Responses for 
 
 ## Features:
 * 3rd party external APIs can be configured with extending 'GenericEntity' abstract class and implementing own response entity (Deserializable to the output JSON value of API).
+* Generalized design: makes development easier. The service can be expanded to support multiple external APIs within few minutes and minimal lines of code.
 * Generalized Utility classes for external API calling (ApiCallProcessor) and validating expiration state (EntityValidator) of cached API response. [can be found in the utility package]
 
 ## Technologies used:
@@ -128,11 +129,11 @@ Sets the server URL. The setURL() setter can also be used for this purpose.
 
 <b>2. void addRequestParam(String key, String value)</b>
 <br>
-Add request parameters to the URL. (Get mappings)
+Adds request parameters to the URL. (Get mappings)
 ###### params:
 <ul>
   <li><b>key:</b>Parameter name</li>
-   <li><b>key:</b>Parameter value</li>
+   <li><b>value:</b>Parameter value</li>
 </ul>
 
 e.g:
