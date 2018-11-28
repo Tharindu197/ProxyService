@@ -17,7 +17,7 @@ import java.util.List;
 
 public abstract class WebProxyServiceHelper<T extends GenericEntity, A> implements IWebProxyServiceHelper<T, A> {
 
-    static Logger log = Logger.getLogger(WebProxyServiceHelper.class.getName());
+    private static Logger log = Logger.getLogger(WebProxyServiceHelper.class.getName());
 
     @Autowired
     protected IGenericRepository repository;
