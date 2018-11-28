@@ -46,7 +46,7 @@ public class TestSpringConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean lef = new LocalContainerEntityManagerFactoryBean();
-        lef.setPackagesToScan(new String[]{"com.fidenz.acadmy.test.entity","com.fidenz.academy.entity"});
+        lef.setPackagesToScan(new String[]{"com.fidenz.acadmy.test.entity", "com.fidenz.academy.entity"});
         lef.setJpaVendorAdapter(jpaVendorAdapter());
         Properties properties = new Properties();
         properties.setProperty("hibernate.ogm.datastore.provider", environment.getRequiredProperty("hibernate.ogm.datastore.provider"));

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fidenz.academy.test.ApiCallTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-11-28T07:17:25" hostname="DESKTOP-K8I6596" time="4.44">
+  <properties/>
+  <testcase name="testApiCalls" classname="com.fidenz.academy.test.ApiCallTest" time="4.44"/>
+  <system-out><![CDATA[12:47:26.335 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://api.openweathermap.org/data/2.5/group?units=metric&appid=9a65d50b7e563dbdb590192df2036d11&id=524901"
+12:47:26.461 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+12:47:26.924 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://api.openweathermap.org/data/2.5/group?units=metric&appid=9a65d50b7e563dbdb590192df2036d11&id=524901" resulted in 200 (OK)
+12:47:26.930 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class com.fidenz.academy.entity.response.weather.Response] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6f250026]
+12:47:26.986 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://gateway.marvel.com/v1/public/stories?apikey=4e89d633cfc27eb097e073f9f27fd956&ts=1543389446979&hash=76026c0bd7d14eca686ce0c9f3621e4b"
+12:47:26.996 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+12:47:29.242 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://gateway.marvel.com/v1/public/stories?apikey=4e89d633cfc27eb097e073f9f27fd956&ts=1543389446979&hash=76026c0bd7d14eca686ce0c9f3621e4b" resulted in 200 (OK)
+12:47:29.244 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class com.fidenz.academy.entity.response.marvel.Response] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1ee26fc0]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

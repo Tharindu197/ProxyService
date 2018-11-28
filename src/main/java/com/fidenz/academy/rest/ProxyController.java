@@ -15,7 +15,7 @@ public class ProxyController {
     @Autowired
     private IWebProxyService webProxyService;
 
-    @PostMapping("/weather")
+    @GetMapping("/weather")
     public Element getWeather(@RequestParam(value = "city", required = false) int cityID) {
         return webProxyService.getWeather(cityID);
     }

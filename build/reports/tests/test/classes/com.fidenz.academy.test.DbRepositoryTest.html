@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.fidenz.academy.test.DbRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.fidenz.academy.test.DbRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.fidenz.academy.test.html">com.fidenz.academy.test</a> &gt; DbRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.394s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGenericEntityAndDbRepo</td>
+<td class="success">0.394s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:47:30.297 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.300 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:47:30.304 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:47:30.322 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.fidenz.academy.test.DbRepositoryTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:47:30.342 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.fidenz.academy.test.DbRepositoryTest]: class path resource [com/fidenz/academy/test/DbRepositoryTest-context.xml] does not exist
+12:47:30.343 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.fidenz.academy.test.DbRepositoryTest]: class path resource [com/fidenz/academy/test/DbRepositoryTestContext.groovy] does not exist
+12:47:30.344 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.fidenz.academy.test.DbRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:47:30.393 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.533 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@28594d0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a5f6209, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5d4ae1a3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4490bf69]
+12:47:30.536 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.536 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.537 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.537 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.542 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@37ea0cfa testClass = DbRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@29e29e27 testClass = DbRepositoryTest, locations = '{}', classes = '{class com.fidenz.academy.test.com.fidenz.academy.test.config.TestSpringConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1c10d50, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@49482a36, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7591134e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40c2f1aa], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+12:47:30.543 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.543 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.fidenz.academy.test.DbRepositoryTest]
+12:47:30.570 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.5.RELEASE)
+
+2018-11-28 12:47:30.929  WARN 7576 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Fidenz/.gradle/caches/modules-2/files-2.1/org.json/json/20180813/8566b2b0391d9d4479ea225645c6ed47ef17fe41/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Fidenz/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2018-11-28 12:47:30.954  INFO 7576 --- [    Test worker] c.fidenz.academy.test.DbRepositoryTest   : Starting DbRepositoryTest on DESKTOP-K8I6596 with PID 7576 (started by Fidenz in C:\Users\Fidenz\Documents\ProxyService)
+2018-11-28 12:47:30.957  INFO 7576 --- [    Test worker] c.fidenz.academy.test.DbRepositoryTest   : No active profile set, falling back to default profiles: default
+2018-11-28 12:47:32.436  INFO 7576 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f10ffeb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-28 12:47:32.614  INFO 7576 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-11-28 12:47:32.643  INFO 7576 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-11-28 12:47:32.729  INFO 7576 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2018-11-28 12:47:32.731  INFO 7576 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-11-28 12:47:32.900  INFO 7576 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-11-28 12:47:33.085  INFO 7576 --- [    Test worker] o.h.o.d.impl.DatastoreProviderInitiator  : OGM000016: NoSQL Datastore provider: org.hibernate.ogm.datastore.mongodb.impl.MongoDBDatastoreProvider
+2018-11-28 12:47:33.323  INFO 7576 --- [    Test worker] o.h.o.d.m.impl.MongoDBDatastoreProvider  : OGM001201: Connecting to MongoDB at localhost:27017 with a timeout set at 10000 millisecond(s)
+2018-11-28 12:47:33.439  INFO 7576 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-28 12:47:33.439  INFO 7576 --- [    Test worker] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2018-11-28 12:47:33.480  INFO 7576 --- [    Test worker] o.h.o.d.m.impl.MongoDBDatastoreProvider  : OGM001207: Connecting to Mongo database named [proxy_cache].
+2018-11-28 12:47:33.488  INFO 7576 --- [    Test worker] org.mongodb.driver.cluster               : Cluster description not yet available. Waiting for 30000 ms before timing out
+2018-11-28 12:47:33.512  INFO 7576 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:540}] to localhost:27017
+2018-11-28 12:47:33.516  INFO 7576 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 4]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2413499}
+2018-11-28 12:47:33.517  INFO 7576 --- [localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2018-11-28 12:47:33.535  INFO 7576 --- [    Test worker] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:541}] to localhost:27017
+2018-11-28 12:47:33.698  INFO 7576 --- [    Test worker] o.h.o.dialect.impl.GridDialectInitiator  : OGM000017: Grid Dialect: org.hibernate.ogm.dialect.impl.BatchOperationsDelegator
+2018-11-28 12:47:33.700  INFO 7576 --- [    Test worker] o.h.o.dialect.impl.GridDialectInitiator  : Grid dialect logs are disabled
+2018-11-28 12:47:33.704  INFO 7576 --- [    Test worker] o.h.o.dialect.impl.GridDialectInitiator  : OGM000017: Grid Dialect: org.hibernate.ogm.dialect.impl.BatchOperationsDelegator
+2018-11-28 12:47:33.704  INFO 7576 --- [    Test worker] o.h.o.dialect.impl.GridDialectInitiator  : Grid dialect logs are disabled
+2018-11-28 12:47:33.725  INFO 7576 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.ogm.dialect.impl.OgmDialect
+2018-11-28 12:47:33.740  WARN 7576 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : null
+2018-11-28 12:47:33.740  INFO 7576 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.ogm.dialect.impl.OgmDialect
+2018-11-28 12:47:33.748  INFO 7576 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-11-28 12:47:34.130  INFO 7576 --- [    Test worker] org.hibernate.ogm.cfg.impl.Version       : OGM000001: Hibernate OGM 5.4.0.Final
+2018-11-28 12:47:34.520  INFO 7576 --- [    Test worker] o.h.o.t.impl.OgmJtaPlatformInitiator     : OGM000076: No explicit or implicit defined JTAPlatform. Using NoJtaPlatform
+2018-11-28 12:47:34.527  INFO 7576 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-11-28 12:47:35.475  INFO 7576 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-28 12:47:35.851  INFO 7576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@c7716d6, started on Wed Nov 28 12:47:31 IST 2018
+2018-11-28 12:47:35.944  INFO 7576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-28 12:47:35.946  INFO 7576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-28 12:47:35.977  INFO 7576 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-28 12:47:35.977  INFO 7576 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-28 12:47:36.254  INFO 7576 --- [    Test worker] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-11-28 12:47:36.272  INFO 7576 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:542}] to localhost:27017
+2018-11-28 12:47:36.274  INFO 7576 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 4]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2220178}
+2018-11-28 12:47:36.370  INFO 7576 --- [    Test worker] c.fidenz.academy.test.DbRepositoryTest   : Started DbRepositoryTest in 5.786 seconds (JVM running for 11.394)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.8</a> at Nov 28, 2018, 12:47:37 PM</p>
+</div>
+</div>
+</body>
+</html>

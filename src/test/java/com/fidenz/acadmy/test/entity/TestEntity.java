@@ -1,6 +1,7 @@
 package com.fidenz.acadmy.test.entity;
 
 import com.fidenz.academy.entity.GenericEntity;
+
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;

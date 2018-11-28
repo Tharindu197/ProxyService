@@ -12,21 +12,21 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.Calendar;
 import java.util.Date;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-@ContextConfiguration(classes= TestSpringConfig.class)
+@ContextConfiguration(classes = TestSpringConfig.class)
 public class EntityExpirationTest {
 
     @Test
-    public void testEntityExpiration(){
+    public void testEntityExpiration() {
 
         //set fake timestamp to the entity that might be expired
         Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.HOUR_OF_DAY,01);
-        cal.set(Calendar.MINUTE,30);
-        cal.set(Calendar.SECOND,0);
+        cal.set(Calendar.HOUR_OF_DAY, 01);
+        cal.set(Calendar.MINUTE, 30);
+        cal.set(Calendar.SECOND, 0);
 
         TestEntity testEntity = new TestEntity();
         testEntity.setAge(10);
@@ -35,10 +35,10 @@ public class EntityExpirationTest {
         testEntity.setTimestamp(cal.getTime());
 
         //validate
-        assertEquals(true, EntityValidator.isExpired(testEntity));
+        assertTrue(EntityValidator.isExpired(testEntity));
 
         //update entity time to current time: then entity might not be expired
         testEntity.setTimestamp(new Date());
-        assertEquals(false, EntityValidator.isExpired(testEntity));
+        assertFalse(EntityValidator.isExpired(testEntity));
     }
 }

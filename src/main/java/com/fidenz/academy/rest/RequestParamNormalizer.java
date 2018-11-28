@@ -1,6 +1,5 @@
 package com.fidenz.academy.rest;
 
-import com.fidenz.academy.util.RequestUtil;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -15,7 +14,7 @@ public class RequestParamNormalizer {
     }
 
     @Before("restAdvice()")
-    public void normalizeParameters(){
+    public void normalizeParameters() {
         //TODO: add some mechanism to scan for request body params and inject it to an actual param
     }
 }
