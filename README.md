@@ -128,6 +128,29 @@ URLFormatter urlFormatter = URLFormatFactory.getFormatter();
 urlFormatter.setURL(serverUrl);
 ```
 
+### 6. RequestParamNormalizer [Auto Executed Aspect]
+This Aspect is automatically executed before any HTTP Request to the controllers. The Aspect is there to prevent any error from getting occured when the expected request parameters are not present in the location expected location.
+The Aspect will simply search if there are request body parameters present and will load them into the relevant java arguments if the URL parameters are not present.
+Though the URL parameters are present, if related parameter is found in the request body, parameter from request body will receive the priority to serve as the argument.
+With this Aspect, developers do not need to care about end-user's choice of sending parameters.
+
+<ul>
+  <li>Works with any endpoint with any HTTP mapping.</li>
+  <li>Best suited for POST mappings.</li>
+</ul>
+
+#### Usage:
+<b>NOTE: No seperate implementations required. Any RestController will work.
+But java arguments of all request parameters must use Wrapper data type instead of premitive type due to a Spring limitation.
+Also consider, only JSON data from request body are loaded into parameters this way.</b>
+
+```java
+    @PostMapping("/weather")
+    public Element getWeatherByPost(@RequestParam(value = "city", required = false) Integer cityID) {
+        return webProxyService.getWeather(cityID);
+    }
+```
+
 #### Method Usage of URLFormatter:
 
 Constructor:<br>
