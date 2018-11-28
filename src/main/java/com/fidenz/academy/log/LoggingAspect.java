@@ -19,7 +19,7 @@ public class LoggingAspect {
 
     private Logger log = Logger.getLogger(LoggingAspect.class.getName());
 
-    //before any rest method
+    //before any spring rest method
     @Pointcut("execution(@(@org.springframework.web.bind.annotation.RequestMapping *) * *(..))")
     public void restAdvice() {
     }

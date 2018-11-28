@@ -23,7 +23,7 @@ import java.util.Scanner;
 @Component
 public class RequestParamNormalizer {
 
-    //before any rest method
+    //before any spring rest method
     @Pointcut("execution(@(@org.springframework.web.bind.annotation.RequestMapping *) * *(..))")
     public void restAdvice() {
     }
