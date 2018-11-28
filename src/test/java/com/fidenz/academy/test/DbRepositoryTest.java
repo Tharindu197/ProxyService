@@ -1,7 +1,8 @@
 package com.fidenz.academy.test;
 
-import com.fidenz.academy.Application;
 import com.fidenz.academy.repo.IGenericRepository;
+import com.fidenz.academy.test.com.fidenz.academy.test.config.TestSpringConfig;
+import com.fidenz.acadmy.test.entity.TestEntity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +12,14 @@ import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
-import static junit.framework.TestCase.assertEquals;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-@ContextConfiguration(classes=Application.class)
+@ContextConfiguration(classes= TestSpringConfig.class)
 public class DbRepositoryTest extends AbstractJUnit4SpringContextTests {
     @Autowired
     private IGenericRepository repository;
@@ -30,7 +34,8 @@ public class DbRepositoryTest extends AbstractJUnit4SpringContextTests {
         repository.save(testEntity);
         //get from db
         List<TestEntity> testEntityList = repository.retrieveResponses();
-        assertEquals(1, testEntityList.size());
+        assertNotNull( testEntityList);
+        assertEquals(true, testEntityList.size()> 0);
         assertEquals("test", testEntityList.get(0).getName());
     }
 }

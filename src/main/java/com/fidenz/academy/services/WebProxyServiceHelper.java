@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 import java.util.List;
 
-abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
+public abstract class WebProxyServiceHelper<T extends GenericEntity, A> {
 
     static Logger log = Logger.getLogger(WebProxyServiceHelper.class.getName());
 

@@ -15,5 +15,15 @@ public class TestRunner {
         for(Failure failure: entityAndRepoResult.getFailures()){
             System.out.println(failure.toString());
         }
+
+        Result webProxyHelperResult = JUnitCore.runClasses(WebProxyServiceHelperTest.class);
+        for(Failure failure: webProxyHelperResult.getFailures()){
+            System.out.println(failure.toString());
+        }
+
+        Result entityExpirationResult = JUnitCore.runClasses(EntityExpirationTest.class);
+        for(Failure failure: entityExpirationResult.getFailures()){
+            System.out.println(failure.toString());
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.fidenz.academy.test;
+package com.fidenz.academy.test.com.fidenz.academy.test.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -11,7 +11,6 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.web.context.ContextLoader;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
@@ -22,7 +21,7 @@ import java.util.Properties;
 
 @SpringBootApplication
 @EnableJpaRepositories("com.fidenz.academy.repo")
-public class TestConfig extends ContextLoader {
+public class TestSpringConfig {
 
     @Autowired
     private Environment environment;
@@ -47,7 +46,7 @@ public class TestConfig extends ContextLoader {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean lef = new LocalContainerEntityManagerFactoryBean();
-        lef.setPackagesToScan(environment.getRequiredProperty("spring.base_package_to_scan"));
+        lef.setPackagesToScan(new String[]{"com.fidenz.acadmy.test.entity","com.fidenz.academy.entity"});
         lef.setJpaVendorAdapter(jpaVendorAdapter());
         Properties properties = new Properties();
         properties.setProperty("hibernate.ogm.datastore.provider", environment.getRequiredProperty("hibernate.ogm.datastore.provider"));
@@ -75,4 +74,3 @@ public class TestConfig extends ContextLoader {
         return transactionManager;
     }
 }
-
