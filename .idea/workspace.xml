@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37e48627-c82f-49ed-89f2-f27cf057721e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/proxy/IWebProxyServiceHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
@@ -9,26 +10,31 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/rest/RequestParamNormalizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/rest/RequestParamNormalizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/services/WebProxyServiceHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/services/WebProxyServiceHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/academy/test/DbRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/academy/test/DbRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/academy/test/EntityExpirationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/academy/test/EntityExpirationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/log/ExeptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/log/ExeptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/services/InvalidListException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/services/WebProxyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/services/WebProxyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/fidenz/academy/services/WebProxyServiceHelper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/academy/test/WebProxyServiceHelperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/academy/test/WebProxyServiceHelperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/acadmy/test/entity/TestEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/fidenz/acadmy/test/entity/TestEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/gs-spring-boot-0.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/gs-spring-boot-0.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.ApiCallTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.ApiCallTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.DbRepositoryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.DbRepositoryTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.EntityExpirationTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.EntityExpirationTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.WebProxyServiceHelperTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.fidenz.academy.test.WebProxyServiceHelperTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.fidenz.academy.test.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.fidenz.academy.test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.ApiCallTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.ApiCallTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.DbRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.DbRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.EntityExpirationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.EntityExpirationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.WebProxyServiceHelperTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.fidenz.academy.test.WebProxyServiceHelperTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/log/ExeptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/log/ExeptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/ProxyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/ProxyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/RequestParamNormalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/RequestParamNormalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyServiceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyServiceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/ApiCallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/ApiCallTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/DbRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/DbRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/EntityExpirationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/EntityExpirationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/InvalidListException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/log/InvalidListException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyServiceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/proxy/WebProxyServiceHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/WebProxyServiceHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/WebProxyServiceHelperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/com/fidenz/academy/test/config/TestSpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/com/fidenz/academy/test/config/TestSpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fidenz/acadmy/test/entity/TestEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fidenz/acadmy/test/entity/TestEntity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -143,7 +149,7 @@
         <counts>
           <entry key="dummy" value="19" />
           <entry key="gradle" value="11" />
-          <entry key="java" value="11683" />
+          <entry key="java" value="11813" />
           <entry key="properties" value="76" />
           <entry key="xml" value="7" />
         </counts>
@@ -151,7 +157,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="11" />
-          <entry key="JAVA" value="11683" />
+          <entry key="JAVA" value="11813" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Properties" value="76" />
           <entry key="XML" value="7" />
@@ -162,8 +168,8 @@
           <entry key="class" value="1" />
           <entry key="gradle" value="2" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="127" />
-          <entry key="properties" value="6" />
+          <entry key="java" value="132" />
+          <entry key="properties" value="7" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -171,9 +177,9 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="127" />
+          <entry key="JAVA" value="132" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="6" />
+          <entry key="Properties" value="7" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -185,7 +191,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/DbRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
-              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,11 +199,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/ProxyController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,7 +215,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/RequestParamNormalizer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
-              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,7 +226,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
+            <state relative-caret-position="799">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -230,49 +236,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/com/fidenz/academy/test/config/TestSpringConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/WebProxyServiceHelperTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/proxy/WebProxyServiceHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+            <state relative-caret-position="289">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/EntityExpirationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyServiceHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="171" column="36" selection-start-line="171" selection-start-column="28" selection-end-line="171" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2664#2694#0" expanded="true" />
+                <element signature="e#2770#2800#0" expanded="true" />
                 <element signature="e#4252#4282#0" expanded="true" />
               </folding>
             </state>
@@ -280,10 +259,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/acadmy/test/entity/TestEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/proxy/IWebProxyServiceHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -292,13 +271,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/TestRunner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/repo/IGenericRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="221">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/log/InvalidListException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -309,6 +306,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -751,9 +749,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/response/Cloud.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/response/Coordinates.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/response/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/response/Sys.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/response/Weather.java" />
@@ -776,7 +771,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/URLFormatter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/URLFormatterImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/ExternalApis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/Error.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/ExeptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/RequestUtil.java" />
@@ -797,11 +791,15 @@
         <option value="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/entity/TestEntity.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/com/fidenz/academy/test/config/TestSpringConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyServiceHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/EntityExpirationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/WebProxyServiceHelperTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/DbRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/ProxyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyServiceHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/IWebProxyServiceHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/IWebProxyServiceHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/proxy/IWebProxyServiceHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyService.java" />
       </list>
     </option>
   </component>
@@ -919,6 +917,14 @@
               <item name="ProxyService" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weather-proxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProxyService" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -970,7 +976,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543389625124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543392365944" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/fidenz" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -1117,7 +1123,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1127,7 +1133,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26393443" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26393443" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1151,13 +1157,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/response/weather/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/entity/response/weather/Sys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1196,13 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/InvalidListException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1328,16 +1320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/repo/IGenericRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/log/ExeptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -1416,16 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/ApiCallProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1440,27 +1412,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/ApiCallTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1473,18 +1428,6 @@
           <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyServiceHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="171" column="36" selection-start-line="171" selection-start-column="28" selection-end-line="171" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2664#2694#0" expanded="true" />
-            <element signature="e#4252#4282#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1532,7 +1475,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/fidenz/academy/test/DbRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1542,7 +1485,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/RequestParamNormalizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1552,10 +1495,73 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/rest/ProxyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/log/InvalidListException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/repo/IGenericRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/proxy/IWebProxyServiceHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/util/proxy/WebProxyServiceHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2770#2800#0" expanded="true" />
+            <element signature="e#4252#4282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fidenz/academy/services/WebProxyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

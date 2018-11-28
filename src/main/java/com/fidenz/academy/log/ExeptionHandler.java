@@ -1,6 +1,5 @@
 package com.fidenz.academy.log;
 
-import com.fidenz.academy.services.InvalidListException;
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
