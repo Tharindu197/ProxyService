@@ -24,4 +24,9 @@ public class ProxyController {
     public List<Story> getStories() {
         return webProxyService.getMarvelStories();
     }
+
+    @PostMapping("/weather")
+    public Element getWeatherByPost(@RequestParam(value = "city", required = false) Integer cityID) {
+        return webProxyService.getWeather(cityID);
+    }
 }

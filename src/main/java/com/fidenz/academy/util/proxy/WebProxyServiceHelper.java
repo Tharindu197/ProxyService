@@ -68,7 +68,7 @@ public abstract class WebProxyServiceHelper<T extends GenericEntity, A> implemen
     private List<T> populateEntityList(Object apiResponse) throws InvalidListException {
         //check if mined object is an object derived from GenericEntity
         //then push the object to a list wrapper
-        List<T> entities= null;
+        List<T> entities = null;
         if (apiResponse instanceof GenericEntity) {
             entities = new ArrayList<>();
             T entity = (T) apiResponse;
@@ -88,7 +88,7 @@ public abstract class WebProxyServiceHelper<T extends GenericEntity, A> implemen
             } catch (ClassCastException cce) {
                 cce.printStackTrace();
             }
-        }  else {
+        } else {
             //if not a list of GenericEntity type objects or a single GenericEntity type object,
             //we cannot find a GenericEntity type object by navigating through the specified wrapperFieldName.
             //throw a serialization error.

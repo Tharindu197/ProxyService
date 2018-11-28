@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.fidenz.academy.test.ApiCallTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-11-28T08:05:30" hostname="DESKTOP-K8I6596" time="4.505">
+<testsuite name="com.fidenz.academy.test.ApiCallTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-11-28T11:04:13" hostname="DESKTOP-K8I6596" time="5.415">
   <properties/>
-  <testcase name="testApiCalls" classname="com.fidenz.academy.test.ApiCallTest" time="4.505"/>
-  <system-out><![CDATA[13:35:31.328 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://api.openweathermap.org/data/2.5/group?units=metric&appid=9a65d50b7e563dbdb590192df2036d11&id=524901"
-13:35:31.572 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
-13:35:31.869 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://api.openweathermap.org/data/2.5/group?units=metric&appid=9a65d50b7e563dbdb590192df2036d11&id=524901" resulted in 200 (OK)
-13:35:31.871 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class com.fidenz.academy.entity.response.weather.Response] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@57482926]
-13:35:31.904 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://gateway.marvel.com/v1/public/stories?apikey=4e89d633cfc27eb097e073f9f27fd956&ts=1543392331895&hash=305dbaacaa577c8e0e2d901d44de9547"
-13:35:31.915 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
-13:35:34.127 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://gateway.marvel.com/v1/public/stories?apikey=4e89d633cfc27eb097e073f9f27fd956&ts=1543392331895&hash=305dbaacaa577c8e0e2d901d44de9547" resulted in 200 (OK)
-13:35:34.128 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class com.fidenz.academy.entity.response.marvel.Response] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1ada081e]
+  <testcase name="testApiCalls" classname="com.fidenz.academy.test.ApiCallTest" time="5.415"/>
+  <system-out><![CDATA[16:34:13.978 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://api.openweathermap.org/data/2.5/group?units=metric&appid=9a65d50b7e563dbdb590192df2036d11&id=524901"
+16:34:14.136 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+16:34:14.381 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://api.openweathermap.org/data/2.5/group?units=metric&appid=9a65d50b7e563dbdb590192df2036d11&id=524901" resulted in 200 (OK)
+16:34:14.386 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class com.fidenz.academy.entity.response.weather.Response] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6e933f39]
+16:34:14.434 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://gateway.marvel.com/v1/public/stories?apikey=4e89d633cfc27eb097e073f9f27fd956&ts=1543403054426&hash=1048e778cabbe835b463804252d406ad"
+16:34:14.445 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+16:34:17.859 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://gateway.marvel.com/v1/public/stories?apikey=4e89d633cfc27eb097e073f9f27fd956&ts=1543403054426&hash=1048e778cabbe835b463804252d406ad" resulted in 200 (OK)
+16:34:17.862 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading [class com.fidenz.academy.entity.response.marvel.Response] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6fbbc4e6]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
