@@ -16,7 +16,7 @@ public class ProxyController {
     private IWebProxyService webProxyService;
 
     @GetMapping("/weather")
-    public Element getWeather(@RequestParam(value = "city", required = false) int cityID) {
+    public Element getWeather(@RequestParam(value = "city", required = false) Integer cityID) {
         return webProxyService.getWeather(cityID);
     }
 
