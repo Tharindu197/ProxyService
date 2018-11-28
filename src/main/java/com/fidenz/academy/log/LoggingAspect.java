@@ -19,8 +19,8 @@ public class LoggingAspect {
 
     private Logger log = Logger.getLogger(LoggingAspect.class.getName());
 
-    //before all endpoint execution in rest package
-    @Pointcut("execution(* (com.fidenz.academy.rest.*).*(..))")
+    //before any rest method
+    @Pointcut("execution(@(@org.springframework.web.bind.annotation.RequestMapping *) * *(..))")
     public void restAdvice() {
     }
 
@@ -69,11 +69,7 @@ public class LoggingAspect {
         return new String[]{method, remoteAddr, mappings[0]};
     }
 
-    @Before("restAdvice() && (@annotation(org.springframework.web.bind.annotation.RequestMapping) " +
-            "|| @annotation(org.springframework.web.bind.annotation.GetMapping)" +
-            "|| @annotation(org.springframework.web.bind.annotation.PostMapping)" +
-            "|| @annotation(org.springframework.web.bind.annotation.PutMapping)" +
-            "|| @annotation(org.springframework.web.bind.annotation.DeleteMapping))")
+    @Before("restAdvice()")
     public void logBeforeRequest(JoinPoint joinPoint) {
         Class<?> annotationType = RequestMapping.class;
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
@@ -84,11 +80,7 @@ public class LoggingAspect {
         log.info("REQUEST::: " + requestData[0] + " request incoming from " + requestData[1] + " at path '" + requestData[2] + "'");
     }
 
-    @AfterReturning("restAdvice() && (@annotation(org.springframework.web.bind.annotation.RequestMapping) " +
-            "|| @annotation(org.springframework.web.bind.annotation.GetMapping)" +
-            "|| @annotation(org.springframework.web.bind.annotation.PostMapping)" +
-            "|| @annotation(org.springframework.web.bind.annotation.PutMapping)" +
-            "|| @annotation(org.springframework.web.bind.annotation.DeleteMapping))")
+    @AfterReturning("restAdvice()")
     public void logAfterRequest(JoinPoint joinPoint) {
         Class<?> annotationType = RequestMapping.class;
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
